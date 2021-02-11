@@ -1,0 +1,30 @@
+body{
+
+}
+header{
+  outline: 1px solid red;
+ width: 100%;
+}
+header div{
+  display: flex;
+}
+figure{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+figure img{
+  width: 80%;
+}
+section
+{
+  outline: 1px solid red;
+}
+.wrapper{
+  margin: auto;
+  max-width: 796.8px;
+}
+.wrapper__content{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
