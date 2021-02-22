@@ -11,39 +11,50 @@
 <body>
   <div class="wrapper">
     <div class="wrapper__content">
-
       <header class="info__base">
-        <figure>
+        <figure class="image__Logo">
           <img src="./image/JC.png" alt="Imagen de fotografia">
         </figure>
-        <div>
-          <h2>José Caicedo</h2>
-          <p>Bogotá, Colombia</p>
-        </div>
-        <p>+57 3222116809 | jose.caicedo@outlook.com</p>
-        <p>COPNIA 25121-055814 CND</p>
-        <p><a href="https://www.linkedin.com/in/jose-caicedo/">https://www.linkedin.com/in/jose-caicedo/</a></p>
-        <section>
-          <h3>RESUMEN</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, voluptatem! Recusandae labore veritatis nesciunt libero, iusto qui facilis quas perferendis temporibus deserunt repellendus vitae porro aut excepturi, possimus error aliquam.</p>
-          <h3>HABILIDADES TÉCNICAS</h3>
+        <section class="wrapper__content-personal">
+          <div>
+            <h1>José Caicedo</h1>
+            <p>Bogotá, Colombia</p>
+          </div>
+          <span>+57 3222116809 | jose.caicedo@outlook.com</span>
+          <span>COPNIA 25121-055814 CND</span><br>
+          <span><a href="https://jose.caicedo.dev/">jose.caicedo.dev</a></span>
+        </section>
+        <section class="wrapper__content-resume">
+          <h4>RESUMEN</h4>
+          <p>Ingeniero Agrónomo, amante de la tecnología, autodidacta e investigador. Propulsor del uso de la tecnología en el Agro, con conocimiento en: sistema de información geográficos aplicados a la producción agrícola,
+            manejo de aeronaves no tripuladas (Drones) y procesamiento fotogramétrico basados en sensores remotos. Actualmente estoy incursionando en el maravilloso y retador mundo del desarrollo del software, estudiando activamente desde internet (Platzi, Código Facilíto, Youtube, Foros, Tutoriales)
+            con el objetivo de llevar a mayor escala la tecnología al Agro.
+          </p>
+          <p>
+            En mi experiencia profesional he estado involucrado en proyectos basados en el uso de Fotogrametría, estimación volumétrica de materiales, mediciones de áreas (Planimetría), modelado del terreno (Altimetría), Optimización de base de dato geográfica, integración de herramientas SIG en evaluación
+            de tierras para fines agrícola y agricultura de precisión.
+          </p>
+          <h4>HABILIDADES TÉCNICAS</h4>
           <ul>
-            <li>JavaScript</li>
-            <li>Html5</li>
-            <li>FTP</li>
-            <li>ArcGis</li>
-            <li>Linux</li>
+            <li>ArcGis, Qgis, Saga Gis, AutoCad 2D, Captura de datos</li>
+            <li>Pix4D, Metashape (Agisoft)</li>
+            <li>FTP, WordPress</li>
+            <li>DroneDeploy, GroundStation</li>
+            <li>FKCN, FUZZY, HTML, CSS y JS</li>
           </ul>
-          <h3>IDIOMAS</h3>
+          <h4>IDIOMAS</h4>
           <ul>
             <li>Español (nativo)</li>
             <li>Portugues (Técnico Profesional)</li>
             <li>Inglés (Básico)</li>
           </ul>
-          <h3>OTROS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatem voluptatibus ullam neque facere hic distinctio, ex quos eos architecto velit aut dicta error necessitatibus ab delectus molestias reprehenderit fuga.</p>
-          <figure>
-            <img src="./image/frame.png" alt="imagen código QR">
+          <h4>OTROS</h4>
+          <p>Actualmente estoy aprendiendo Portugués. En mi tiempo libre práctico ciclismo,
+            visitó nuevos lugares, y me gusta investigar adelantos tecnológico que sean
+            aplicables a la agricultura. Si quieres saber un poco más escanea el código QR.
+          </p>
+          <figure class="image__qr" >
+            <img class="image__qr-f"  src="./image/frame.png" alt="imagen código QR">
           </figure>
         </section>
       </header>
@@ -51,35 +62,52 @@
 
         <!-- Area de experiencia, educación -->
         <section>
-          <h3>EXPERIENCIA</h3>
-          <h4>2020 mar -actual</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ut rerum recusandae nesciunt accusantium consequuntur nihil incidunt fugiat adipisci explicabo. Consequuntur voluptatum, tempora nulla officia corrupti facere error odit commodi.</p>
-          <h4>2020 mar -actual</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ut rerum recusandae nesciunt accusantium consequuntur nihil incidunt fugiat adipisci explicabo. Consequuntur voluptatum, tempora nulla officia corrupti facere error odit commodi.</p>
-          <h4>2020 mar -actual</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ut rerum recusandae nesciunt accusantium consequuntur nihil incidunt fugiat adipisci explicabo. Consequuntur voluptatum, tempora nulla officia corrupti facere error odit commodi.</p>
-          <h4>2020 mar -actual</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ut rerum recusandae nesciunt accusantium consequuntur nihil incidunt fugiat adipisci explicabo. Consequuntur voluptatum, tempora nulla officia corrupti facere error odit commodi.</p>
-          <h4>2020 mar -actual</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ut rerum recusandae nesciunt accusantium consequuntur nihil incidunt fugiat adipisci explicabo. Consequuntur voluptatum, tempora nulla officia corrupti facere error odit commodi.</p>
+          <h4>EXPERIENCIA</h4>
+          <span>2020 sep - 2020 nov</span><br>
+          <span><b>Axsol</b> - Argentina (remoto)</span><br>
+          <span>Profesional SIG - Fotogrametrista</span><br>
+          <p>Funciones:</p>
+          <p>Procesamiento Fotogramétrico, Producto cartográfico, Modelo digitales de elevación y Estumación volumétrica en proyecto en el area Hidrocarburo.</p>
+
+          <span>2017 dic - 2020 mar</span><br>
+          <span><b>Inflight Solutions S.A.S.</b> - Medellín, Colombia</span><br>
+          <span>Asesor SIG - Ingeniero Agrónomo</span><br>
+          <p>Funciones:</p>
+          <p>Procesamiento Fotogramétrico, Agricultura de Precisión, Producto SIG, Piloto de Dron y Evaluación de Tierra.</p>
+
+          <span>2016 oct - 2017 dic</span><br>
+          <span><b>Tecna - Ice S.A.</b> - Bogotá, Colombia</span><br>
+          <span>Profesional SIG</span><br>
+          <p>Funciones:</p>
+          <p>Optimización de Bases de datos APDM y PODS, en el área de infraestructura de transporte Cenit/Ecopetrol.</p>
+
+          <span>2015 oct - 2016 ago</span><br>
+          <span><b>SIAP Venezuela C.A.</b> - Maracay, Venezuela</span><br>
+          <span>Ingeniero Supervisor</span><br>
+          <p>Funciones:</p>
+          <p>Planificación, supervisión en cultivos de Arroz y Musáceas, Procesamiento de levantamiento fotogramétrico, y Evaluación aptitud de tierras.</p>
+
+          <span>2015 Feb - 2016 ago</span><br>
+          <span><b>SIGPER - Consultores C.A.</b> - Maracay, Venezuela</span><br>
+          <span>Analista SIG - Ambiente y Ordenamiento del Territorio</span><br>
+          <p>Funciones:</p>
+          <p>Ordenamiento de espacios asociados a la generación Hidroeléctrica, análisis de imágenes y levantamiento catastral.</p>
+
         </section>
         <section>
-          <h3>EDUCACIÓN</h3>
-          <p>2020 mar - Actual</p>
-          <h4>Freelancer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error ex optio excepturi natus quaerat sit veritatis alias eaque repellat. Distinctio reprehenderit quia libero ea tempore a velit voluptas blanditiis.</p>
-          <p>2020 mar - Actual</p>
-          <h4>Freelancer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error ex optio excepturi natus quaerat sit veritatis alias eaque repellat. Distinctio reprehenderit quia libero ea tempore a velit voluptas blanditiis.</p>
-          <p>2020 mar - Actual</p>
-          <h4>Freelancer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error ex optio excepturi natus quaerat sit veritatis alias eaque repellat. Distinctio reprehenderit quia libero ea tempore a velit voluptas blanditiis.</p>
-          <p>2020 mar - Actual</p>
-          <h4>Freelancer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error ex optio excepturi natus quaerat sit veritatis alias eaque repellat. Distinctio reprehenderit quia libero ea tempore a velit voluptas blanditiis.</p>
-          <p>2020 mar - Actual</p>
-          <h4>Freelancer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error ex optio excepturi natus quaerat sit veritatis alias eaque repellat. Distinctio reprehenderit quia libero ea tempore a velit voluptas blanditiis.</p>
+          <h4>EDUCACIÓN</h4>
+
+          <span>2017 May - Convalidación, Ministerio de Educación Nacional</span><br>
+          <p><b>Ingeniero Agrónomo</b> registrado en el COPNIA</p>
+
+          <span>2015 - 2016 - Agronomía, Universidad Central de Venezuela</span><br>
+          <p><b>Especialización en Geomática</b></p>
+          <span>(2015 sep - Suspendida a falta de Tesis)</span><br>
+
+          <span>2009 - 2015 - Agronomía, Universidad Central de Venezuela</span><br>
+          <p><b>Ingeniero Agrónomo</b></p>
+          <span>(graduado en julio del 2015)</span>
+
         </section>
       </main>
     </div>

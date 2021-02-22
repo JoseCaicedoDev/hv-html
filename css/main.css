@@ -16,9 +16,7 @@
 * {
   font-family: var(--second-font);
 }
-figure {
-  margin: 0px 16px;
-}
+
 *::-webkit-scrollbar {
   width: 8px; /* Tamaño del scroll en vertical */
   height: 8px; /* Tamaño del scroll en horizontal */
@@ -70,24 +68,36 @@ h6 {
   font-family: var(--main-font);
 }
 h1 {
-  font-size: 48px;
+  margin: 5px 0 5px;
+  font-size: 26px;
   font-weight: 700;
 }
 h2 {
-  font-size: 40px;
+  font-size: 24px;
 }
 h3 {
-  font-size: 32px;
+  margin: 0px;
+  font-size: 20px;
   font-weight: 400;
 }
 h4 {
-  font-size: 24px;
-  font-weight: 400;
+  margin: 5px 0 5px;
+  font-size: 18px;
+  font-weight: 700;
 }
 h5 {
+  margin: 5px 0 5px;
   font-size: 16px;
+  font-weight: 500;
 }
-p {
+p{
+  text-align: justify;
+}
+p, ul{
+  margin: 5px 0;
+}
+p, li {
+  font-size: 14px;
   font-family: var(--second-font);
 }
 .title_blue {

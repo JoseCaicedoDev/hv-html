@@ -1,30 +1,57 @@
+html{
+}
 body{
-
+  width: 100%;
 }
 header{
   outline: 1px solid red;
- width: 100%;
+  padding-right: 5px;
 }
 header div{
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-figure{
+header div h2, header div p{
   margin: 0;
-  width: 100%;
+}
+header span{
+  margin: 5px 0 5px;
+}
+.image__Logo,
+.image__qr{
+  outline: 1px solid red;
+  margin: 0;
   text-align: center;
 }
-figure img{
-  width: 80%;
+/* figure img{
+  max-inline-size: 100%;
+} */
+img{
+  width: 50%;
+}
+.image__qr-f{
+  width: 20%;
 }
 section
 {
   outline: 1px solid red;
 }
 .wrapper{
+  max-inline-size: 796px;
+/*   max-height: 1123px; */
   margin: auto;
-  max-width: 796.8px;
 }
 .wrapper__content{
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper__content-personal{
+  height: 8%;
+}
+.wrapper__content-resume{
+  height: 68%;
+}
+main{
+  padding-left: 5px;
 }
