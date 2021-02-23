@@ -1,7 +1,65 @@
+@font-face{
+  font-family: Agency FB;
+  src: url('../font/agency-fb-bold_[allfont.es].ttf');
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face{
+  font-family: Agency FB;
+  src: url('../font/01182_AgencyFB.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: corbel ;
+  src: url('../font/CORBEL.TTF');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  /* colors */
+  --color-black: #212e37;
+  /* fonts */
+  --main-font: 'Corbel', arial;
+  --second-font: 'Agency FB', arial;
+}
+
 html{
+  font-family: var(--main-font);
 }
 body{
   width: 100%;
+}
+h1{
+  font-family: var(--second-font);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+h4{
+  margin: 15px 0;
+  font-size: 14px;
+}
+.content__personal-name{
+  margin-right: 15px;
+}
+.content__personal p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+.content__personal a{
+  color: var(--color-black);
+}
+.content__personal-name p{
+  font-family: var(--second-font);
+  font-size: 16px;
+}
+.content__resume p{
+  font-size: 10px;
+  text-align: justify;
 }
 header{
   outline: 1px solid red;
@@ -28,7 +86,7 @@ header span{
   max-inline-size: 100%;
 } */
 img{
-  width: 50%;
+  width: 100%;
 }
 .image__qr-f{
   width: 20%;
@@ -46,12 +104,7 @@ section
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.wrapper__content-personal{
-  height: 8%;
-}
-.wrapper__content-resume{
-  height: 68%;
-}
+
 main{
   padding-left: 5px;
 }
