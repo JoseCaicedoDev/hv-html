@@ -76,6 +76,7 @@ h4{
 }
 .content__abilities-program{
   direction: rtl;
+  padding-right: 0;
 }
 .content__languages li{
   font-size: 10px;
