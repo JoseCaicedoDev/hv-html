@@ -74,6 +74,9 @@ h4{
   list-style: none;
   font-family: var(--second-font);
 }
+.content__abilities-program{
+  direction: rtl;
+}
 .content__languages li{
   font-size: 10px;
   list-style-position: inside;
@@ -114,21 +117,14 @@ header div{
   justify-content: space-between;
   align-items: flex-end;
 }
-/* header div h2, header div p{
-  margin: 0;
-}
-header span{
-  margin: 5px 0 5px;
-} */
+
 .image__Logo,
 .image__qr{
   /* outline: 1px solid red; */
   margin: 0;
   text-align: center;
 }
-/* figure img{
-  max-inline-size: 100%;
-} */
+
 img{
   width: 75%;
 }
