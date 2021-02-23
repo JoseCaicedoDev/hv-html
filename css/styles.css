@@ -151,9 +151,9 @@ main{
   padding-right: 15px ;
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
   .wrapper__content{
     display: grid;
     grid-template-columns: 1fr;
   }
-}
+} */
