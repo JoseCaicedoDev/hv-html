@@ -17,15 +17,15 @@
         </figure>
         <section class="content__personal">
           <div class="content__personal-name">
-            <h1>José <b>Caicedo</b></h1>
+            <h1>José <strong>Caicedo</strong></h1>
             <p>Bogotá, Colombia</p>
           </div>
           <p>+57 3222116809 | jose.caicedo@outlook.com</p>
           <p>COPNIA 25121-055814 CND</p>
-          <p><a href="https://jose.caicedo.dev/" target="_blank">jose.caicedo.dev</a> | <a href="https://www.linkedin.com/in/jose-caicedo/" target="_blank">linkedin.com/in/jose-caicedo/</a></p>
+          <p><a href="https://jose.caicedo.dev/" target="_blank">jose.caicedo.dev</a> | <a href="https://www.linkedin.com/in/jose-caicedo/" target="_blank">linkedin.com/in/jose-caicedo</a></p>
         </section>
         <section class="content__resume">
-          <h4>RESUMEN</h4>
+          <h4 class="titleDark">RESUMEN</h4>
           <p>Ingeniero Agrónomo, amante de la tecnología, autodidacta e investigador. Propulsor del uso de la tecnología en el Agro, con conocimiento en: sistema de información geográficos aplicados a la producción agrícola,
             manejo de aeronaves no tripuladas (Drones) y procesamiento fotogramétrico basados en sensores remotos. Actualmente estoy incursionando en el maravilloso y retador mundo del desarrollo del software, estudiando activamente desde internet (Platzi, Código Facilíto, Youtube, Foros, Tutoriales)
             con el objetivo de llevar a mayor escala la tecnología al Agro.
@@ -36,7 +36,7 @@
           </p>
         </section>
         <section class="content__abilities">
-          <h4>HABILIDADES TÉCNICAS</h4>
+          <h4 class="titleDark">HABILIDADES TÉCNICAS</h4>
           <div>
             <ul>
               <li>ArcGis, Qgis, Saga Gis, AutoCad 2D, Captura de datos</li>
@@ -55,7 +55,7 @@
           </div>
         </section>
         <section class="content__languages">
-          <h4>IDIOMAS</h4>
+          <h4 class="titleDark">IDIOMAS</h4>
           <ul>
             <li>Español (nativo)</li>
             <li>Portugues (Técnico Profesional)</li>
@@ -63,7 +63,7 @@
           </ul>
         </section>
         <section class="content__others">
-          <h4>OTROS</h4>
+          <h4 class="titleDark">OTROS</h4>
           <p>Actualmente estoy aprendiendo Portugués. En mi tiempo libre práctico ciclismo,
             visitó nuevos lugares, y me gusta investigar adelantos tecnológico que sean
             aplicables a la agricultura. Si quieres saber un poco más escanea el código QR.
@@ -76,7 +76,7 @@
       <main>
         <!-- Area de experiencia, educación -->
         <article class="info__experience">
-          <h4>EXPERIENCIA</h4>
+          <h4 class="titleDark">EXPERIENCIA</h4>
           <section class="experience-content">
             <div class="experience-description">
               <p>2020 sep - 2020 nov</p>
@@ -140,7 +140,7 @@
 
         </article>
         <article class="info__education">
-          <h4>EDUCACIÓN</h4>
+          <h4 class="titleDark">EDUCACIÓN</h4>
           <section class="education-content">
             <p>2017 May - Convalidación, Ministerio de Educación Nacional</p>
             <p><b>Ingeniero Agrónomo</b> registrado en el COPNIA</p>
@@ -163,8 +163,43 @@
           Borrosa, programación con python, entre otras áreas.</p>
         </section>
       </main>
+      <footer>
+        <button id="bdark">Modo oscuro</button>
+      </footer>
     </div>
   </div>
+  <script>
+    const bdark=document.querySelector('#bdark')
+    const body=document.querySelector('body')
+    const title=document.querySelectorAll('h1, h4')
+    const title_profile=document.querySelectorAll('b, a')
+/*     const link=document.querySelectorAll('a') */
+
+/*     const title=document.getElementsByClassName('titleDark') */
+
+
+    bdark.addEventListener('click', e =>{
+      body.classList.toggle('darkmode')
+      for (let i = 0; i < title_profile.length; i++) {
+        title_profile[i].classList.toggle('darkmode__title-profile')
+      }
+      for (let i = 0; i < title.length; i++) {
+        title[i].classList.toggle('darkmode__title')
+      }
+/*       for (let i = 0; i < link.length; i++) {
+        link[i].classList.toggle('darkmode__title-profile')
+      } */
+    })
+/*       title.classList.toggle('darkmode__title') */
+/*       if (title.classList.contains('titleDark')){
+        title.classList.add('darkmode__title')
+      }else{
+        title.classList.remove('darkmode__title')
+
+      }
+    }) */
+
+  </script>
 
 </body>
 </html>

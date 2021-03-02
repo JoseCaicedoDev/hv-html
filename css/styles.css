@@ -20,6 +20,7 @@
 
 :root {
   /* colors */
+  --color-white: #8b949e;
   --color-black: #212e37;
   /* fonts */
   --main-font: 'Corbel', arial;
@@ -28,6 +29,7 @@
 
 html{
   font-family: var(--main-font);
+  color: var(--color-black);
 }
 body{
   width: 100%;
@@ -44,6 +46,11 @@ h4{
   margin: 15px 0;
   font-size: 14px;
 }
+
+a{
+  text-decoration: none;
+  color: var(--color-black);
+}
 .content__personal-name{
   margin-right: 15px;
 }
@@ -52,9 +59,9 @@ h4{
   font-size: 12px;
   line-height: 18px;
 }
-.content__personal a{
+/* .content__personal a{
   color: var(--color-black);
-}
+} */
 .content__personal-name p{
   font-family: var(--second-font);
   font-size: 16px;
@@ -110,7 +117,6 @@ h4{
 }
 
 header{
-  /* outline: 1px solid red; */
   padding-right: 5px;
 }
 header div{
@@ -121,7 +127,6 @@ header div{
 
 .image__Logo,
 .image__qr{
-  /* outline: 1px solid red; */
   margin: 0;
   text-align: center;
 }
@@ -132,13 +137,8 @@ img{
 .image__qr-f{
   width: 25%;
 }
-/* section
-{
-  outline: 1px solid red;
-} */
 .wrapper{
   max-inline-size: 796px;
-/*   max-height: 1123px; */
   margin: auto;
 }
 .wrapper__content{
@@ -157,3 +157,22 @@ main{
     grid-template-columns: 1fr;
   }
 } */
+body.darkmode{
+  background: #0d1117;
+  color: #8b949e;
+}
+.darkmode__title{
+  color: #58a6ff;
+}
+.darkmode__title-profile{
+  color: #c9d1d9;
+}
+/* Dark
+-- fondo black --
+background: #0d1117;
+-- color fuente h1 y h4 --
+color: #58a6ff;
+-- b --
+color: #c9d1d9;
+-- a --
+color: #8b949e; */
