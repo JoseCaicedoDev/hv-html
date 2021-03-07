@@ -34,6 +34,7 @@ html{
 body{
   width: 100%;
   position: relative;
+  top: -30px;
 }
 h1, h4{
   font-family: var(--second-font);
@@ -152,12 +153,6 @@ main{
   padding-right: 15px ;
 }
 
-/* @media (max-width: 600px){
-  .wrapper__content{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-} */
 body.darkmode{
   background: #0d1117;
   color: #8b949e;
@@ -170,7 +165,7 @@ body.darkmode{
 }
 button{
   position: fixed;
-  top: 10px;
+  top: 35px;
 
 }
 .switch{
@@ -222,3 +217,15 @@ color: #58a6ff;
 color: #c9d1d9;
 -- a --
 color: #8b949e; */
+
+@media (max-width: 600px){
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .wrapper__content{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
