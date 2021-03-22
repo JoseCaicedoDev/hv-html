@@ -213,6 +213,39 @@ button{
   }
 }
 @media (min-width: 767px){
+  h4{
+    font-size: 14px;
+  }
+  header{
+    padding-right: 5px;
+  }
+  main{
+    padding-left: 5px;
+    padding-right: 15px ;
+  }
+    .content__personal-name{
+    margin-right: 15px;
+  }
+  .content__personal p{
+    font-size: 12px;
+  }
+  .content__resume p,
+  .content__others p{
+    font-size: 10px;
+  }
+  .content__languages li{
+    font-size: 10px;
+  }
+  .experience-functions p,
+  .info__other p{
+    font-size: 11px;
+  }
+  img{
+    width: 65%;
+  }
+  .image__qr-f{
+    width: 25%;
+  }
   .wrapper{
     max-inline-size: 796px;
     margin: auto;
