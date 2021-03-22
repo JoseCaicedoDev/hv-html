@@ -33,11 +33,10 @@ html{
   font-family: var(--main-font);
   color: var(--color-black);
 }
-
 body{
   margin: 0;
-  width: 100%;
 }
+
 h1, h4{
   font-family: var(--second-font);
 }
@@ -55,15 +54,12 @@ a{
   text-decoration: none;
   color: var(--color-black);
 }
-main{
+main,
+header{
   padding-left: 10px;
   padding-right: 10px ;
 }
 
-header{
-  padding-left: 10px;
-  padding-right: 10px;
-}
 header div{
   display: flex;
   justify-content: space-between;
@@ -193,4 +189,36 @@ button{
 .active::after{
   right: 0;
   left: unset;
+}
+
+@media (min-width: 425px){
+  .content__resume p,
+  .content__others p{
+    font-size: 14px;
+  }
+  .content__abilities li,
+  .content__languages li,
+  .experience-functions p,
+  .info__other p{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 550px){
+  img{
+    width: 50%;
+  }
+  .image__qr-f{
+    width: 30%;
+  }
+}
+@media (min-width: 767px){
+  .wrapper{
+    max-inline-size: 796px;
+    margin: auto;
+  }
+  .wrapper__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
