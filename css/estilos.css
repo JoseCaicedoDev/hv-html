@@ -33,10 +33,10 @@ html{
   font-family: var(--main-font);
   color: var(--color-black);
 }
+
 body{
+  margin: 0;
   width: 100%;
-  position: relative;
-  top: -30px;
 }
 h1, h4{
   font-family: var(--second-font);
@@ -48,31 +48,51 @@ h1{
 }
 h4{
   margin: 15px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a{
   text-decoration: none;
   color: var(--color-black);
 }
-.content__personal-name{
-  margin-right: 15px;
+main{
+  padding-left: 10px;
+  padding-right: 10px ;
 }
+
+header{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+figure{
+  margin: 10px;
+  text-align: center;
+}
+img{
+  width: 70%;
+}
+.image__qr-f{
+  width: 40%;
+}
+
 .content__personal p{
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
 }
-/* .content__personal a{
-  color: var(--color-black);
-} */
 .content__personal-name p{
   font-family: var(--second-font);
   font-size: 16px;
 }
 .content__resume p,
 .content__others p{
-  font-size: 10px;
+  font-size: 12px;
   text-align: justify;
 }
 .content__abilities ul,
@@ -90,10 +110,9 @@ a{
   padding-right: 0;
 }
 .content__languages li{
-  font-size: 10px;
+  font-size: 12px;
   list-style-position: inside;
 }
-
 .info__experience h4{
   margin-top: 0;
 }
@@ -116,43 +135,8 @@ a{
 .experience-functions p,
 .info__other p{
   font-family: var(--main-font);
-  font-size: 11px;
+  font-size: 12px;
   text-align: justify;
-}
-
-header{
-  padding-right: 5px;
-}
-header div{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.image__Logo,
-.image__qr{
-  margin: 0;
-  text-align: center;
-}
-
-img{
-  width: 65%;
-}
-.image__qr-f{
-  width: 25%;
-}
-.wrapper{
-  max-inline-size: 796px;
-  margin: auto;
-}
-.wrapper__content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-main{
-  padding-left: 5px;
-  padding-right: 15px ;
 }
 
 body.darkmode{
@@ -167,8 +151,8 @@ body.darkmode{
 }
 button{
   position: fixed;
-  top: 35px;
-
+  top: 15px;
+  left: 15px;
 }
 .switch{
   background: #343d5b;
@@ -209,25 +193,4 @@ button{
 .active::after{
   right: 0;
   left: unset;
-}
-/* Dark
--- fondo black --
-background: #0d1117;
--- color fuente h1 y h4 --
-color: #58a6ff;
--- b --
-color: #c9d1d9;
--- a --
-color: #8b949e; */
-
-@media (min-width: 600px){
-  body{
-    width: 100%;
-    margin: 0;
-    padding: 0 10px;
-  }
-  .wrapper__content{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
